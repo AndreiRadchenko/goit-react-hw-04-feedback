@@ -7,10 +7,14 @@ const List = styled.ul`
   padding: 0;
 `;
 
+const Item = styled.li`
+  font-size: 18px;
+`;
+
 const Button = styled.button`
   cursor: pointer;
   font-weight: 500;
-  font-size: 12px;
+  /* font-size: 12px; */
   line-height: calc(16 / 12);
 
   width: 152px;
@@ -31,6 +35,7 @@ const Button = styled.button`
 
 const css = {
   List,
+  Item,
   Button,
 };
 

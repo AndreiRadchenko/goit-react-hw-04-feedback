@@ -8,8 +8,8 @@ const List = styled.ul`
   padding: 0;
 `;
 
-const Item = styled.p`
-  font-size: 16px;
+const Item = styled.li`
+  font-size: 18px;
   line-height: calc(16 / 12);
   color: black;
   background-color: white;

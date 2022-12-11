@@ -4,9 +4,12 @@ import Statistics from 'components/Statistics';
 import Notification from 'components/Notification';
 import { useState } from 'react';
 import capitalize from './utils/capitalize';
+import shortid from 'shortid';
 
 const options = ['good', 'neutral', 'bad'];
-const uiElements = options.map(capitalize);
+const uiElements = options.map(btn => {
+  return { name: capitalize(btn), id: shortid.generate() };
+});
 
 export const App = () => {
   const [good, setGood] = useState(() => 0);
